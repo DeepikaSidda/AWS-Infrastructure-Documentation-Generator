@@ -44,3 +44,77 @@ Managing AWS infrastructure manually can be overwhelming, especially when scalab
 - 🧹 **Auto Cleanup:** Helps identify orphaned or zombie resources  
 - 💵 **Track Cost-related Changes:** Correlates infra changes to cost spikes  
 - ✅ **Enforce Cost-Saving Rules:** S3 lifecycle, encryption policies, etc.
+
+## 🧠 System Design — AWS InfraDoc Generator
+
+### 1️⃣ Scanning AWS Infrastructure in Real Time
+
+The tool leverages AWS SDKs like **Boto3** or the **AWS CLI** to connect to your AWS account and automatically discover resources such as:
+
+- EC2 Instances
+- S3 Buckets
+- RDS Databases
+- Lambda Functions
+- VPCs, IAM Roles, and more
+
+It fetches metadata including:
+- Configuration (instance types, encryption, policies)
+- Tags (owner, environment, purpose)
+- Relationships (e.g., Lambda triggered by API Gateway)
+- Current state and usage
+
+✅ This enables teams to maintain complete visibility of their AWS environment — no more manual mapping or outdated Excel sheets!
+
+---
+
+### 2️⃣ Generating Dynamic Architecture Diagrams
+
+Using **Diagrams (Python)**, **PlantUML**, or **Graphviz**, the tool translates raw metadata into visual representations:
+
+- Automatically generated from live infrastructure data
+- Updated on each scan or change
+- Exported as **PNG**, **SVG**, or embedded **Markdown**
+
+📊 These diagrams offer clarity for developers, architects, and ops teams alike.
+
+---
+
+### 3️⃣ Producing Human-Readable Documentation
+
+Transforms AWS resource metadata into structured docs:
+
+- Includes configuration, regions, IAM policies, networking, security
+- Output in **HTML**, **Markdown**, or **PDF**
+- Easy to integrate with **Notion**, **Confluence**, or GitHub Wiki
+
+> 🔖 Sample PDF version available in `/samples` directory
+
+---
+
+### 4️⃣ Tracking Infrastructure Changes
+
+Supports change detection and auditing via snapshots:
+
+- Stores historical states in **S3 (with versioning)**
+- Detects additions, deletions, and modifications
+- Maintains changelogs for rollback and compliance
+- (Optional) Alerting on unauthorized changes
+
+📁 Snapshots stored securely for **audit-readiness and rollback safety**
+
+---
+
+### 5️⃣ Generating Automated Compliance Reports
+
+Validates your infrastructure using:
+- YAML-based rule definitions
+- AWS Config Rules or Security Hub integrations
+
+Checks for:
+- Encryption enforcement (EBS, S3, RDS)
+- Public access blocking (S3, EC2)
+- IAM over-permissiveness
+- Approved instance types or regions
+
+📄 Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
+
