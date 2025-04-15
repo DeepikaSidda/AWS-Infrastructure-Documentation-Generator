@@ -76,6 +76,18 @@ Using **Diagrams (Python)**, **PlantUML**, or **Graphviz**, the tool translates 
 - Exported as **PNG**, **SVG**, or embedded **Markdown**
 
 📊 These diagrams offer clarity for developers, architects, and ops teams alike.
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/p5.jpg" alt="Lambda Function" width="450"><br>
+      <b>Home Page</b>
+    </td>
+    <td align="center">
+      <img src="images/p1.jpg" alt="Another Image" width="450"><br>
+      <b>Pregnancy Care Page</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
