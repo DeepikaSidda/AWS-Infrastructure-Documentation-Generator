@@ -79,8 +79,7 @@ Using **Diagrams (Python)**, **PlantUML**, or **Graphviz**, the tool translates 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="AWS-Infrastructure-Documentation-Generator
-/swastyashe_architecture.png" alt="Lambda Function" width="450"><br>
+      <img src="swastyashe_architecture.png" alt="Lambda Function" width="450"><br>
       <b>Home Page</b>
     </td>
     <td align="center">
