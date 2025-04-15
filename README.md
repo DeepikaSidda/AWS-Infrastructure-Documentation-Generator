@@ -79,15 +79,16 @@ Using **Diagrams (Python)**, **PlantUML**, or **Graphviz**, the tool translates 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="swastyashe_architecture.png" alt="Lambda Function" width="450"><br>
+      <img src="swastyashe_architecture.png" alt="Lambda Function" width="250"><br>
       <b>Home Page</b>
     </td>
     <td align="center">
-      <img src="images/p1.jpg" alt="Another Image" width="450"><br>
+      <img src="serverless_registration_form_architecture.png" alt="Another Image" width="250"><br>
       <b>Pregnancy Care Page</b>
     </td>
   </tr>
 </table>
+
 
 ---
 
