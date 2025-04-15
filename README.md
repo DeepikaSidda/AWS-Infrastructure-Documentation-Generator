@@ -65,7 +65,6 @@ It fetches metadata including:
 
 ✅ This enables teams to maintain complete visibility of their AWS environment — no more manual mapping or outdated Excel sheets!
 
----
 
 ### 2️⃣ Generating Dynamic Architecture Diagrams
 
@@ -80,17 +79,16 @@ Using **Diagrams (Python)**, **PlantUML**, or **Graphviz**, the tool translates 
   <tr>
     <td align="center">
       <img src="swastyashe_architecture.png" alt="Lambda Function" width="250"><br>
-      <b>Home Page</b>
+      <b>Swasthyashe Web App</b>
     </td>
     <td align="center">
       <img src="serverless_registration_form_architecture.png" alt="Another Image" width="250"><br>
-      <b>Pregnancy Care Page</b>
+      <b>Serverless Registration Web App</b>
     </td>
   </tr>
 </table>
 
 
----
 
 ### 3️⃣ Producing Human-Readable Documentation
 
@@ -137,7 +135,6 @@ Make sure you have:
 - AWS CLI configured (`aws configure`)
 - Proper IAM permissions granted for EC2, S3, RDS, Lambda, IAM, etc.
 
----
 
 ## 📦 Installation Guide
 
