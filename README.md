@@ -87,9 +87,7 @@ Transforms AWS resource metadata into structured docs:
 - Output in **HTML**, **Markdown**, or **PDF**
 - Easy to integrate with **Notion**, **Confluence**, or GitHub Wiki
 
-> 🔖 Sample PDF version available in `/samples` directory
 
----
 
 ### 4️⃣ Tracking Infrastructure Changes
 
@@ -100,9 +98,9 @@ Supports change detection and auditing via snapshots:
 - Maintains changelogs for rollback and compliance
 - (Optional) Alerting on unauthorized changes
 
-📁 Snapshots stored securely for **audit-readiness and rollback safety**
 
----
+
+
 
 ### 5️⃣ Generating Automated Compliance Reports
 
