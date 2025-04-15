@@ -116,3 +116,21 @@ Checks for:
 
 📄 Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
 
+## ✅ Getting Started: Prerequisites
+
+Make sure you have:
+
+- Python 3.8+ installed
+- AWS CLI configured (`aws configure`)
+- Proper IAM permissions granted for EC2, S3, RDS, Lambda, IAM, etc.
+
+---
+
+## 📦 Installation Guide
+
+```bash
+git clone https://github.com/DeepikaSidda/AWS-Infrastructure-Documentation-Generator.git
+cd AWS-Infrastructure-Documentation-Generator
+pip install -r requirements.txt
+  
+
