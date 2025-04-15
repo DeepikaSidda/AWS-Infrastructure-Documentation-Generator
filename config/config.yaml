@@ -1,0 +1,34 @@
+aws:
+  regions: ['us-east-1']
+  resources:
+    - ec2
+    - s3
+    - rds
+    - lambda
+    - vpc
+    - apigateway
+
+output:
+  directory: ./output
+  format:
+    - html
+    - markdown
+    - pdf
+  diagrams:
+    - png
+    - svg
+
+templates:
+  directory: ./templates
+
+change_tracking:
+  enabled: true
+  storage: 's3'
+  config:
+   # repo_path: ./history  # for git
+    bucket_name: blpgathon  # for s3
+
+compliance:
+  enabled: true
+  rules_file: ./config/compliance_rules.yaml
+  report_format: html  # or 'json'

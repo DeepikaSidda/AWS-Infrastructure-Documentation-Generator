@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS Infrastructure Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            color: #232f3e;
+        }
+        
+        .resource {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        
+        .resource-header {
+            background: #f8f8f8;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .metadata {
+            font-family: monospace;
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {{ content | safe }}
+    </div>
+</body>
+</html>

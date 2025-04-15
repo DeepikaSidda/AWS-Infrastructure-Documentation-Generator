@@ -1,0 +1,65 @@
+ec2:
+  encryption_enabled:
+    description: "EBS volumes must be encrypted"
+    severity: high
+    condition:
+      field: "block_device_mappings.*.ebs.encrypted"
+      operator: "equals"
+      value: true
+  
+  instance_type_allowed:
+    description: "Only approved instance types allowed"
+    severity: medium
+    condition:
+      field: "instance_type"
+      operator: "contains"
+      value: ["t3.", "m5.", "c5."]
+
+s3:
+  encryption_enabled:
+    description: "S3 buckets must have encryption enabled"
+    severity: high
+    condition:
+      field: "encryption"
+      operator: "exists"
+  
+  public_access_blocked:
+    description: "S3 buckets must not be public"
+    severity: high
+    condition:
+      field: "public_access_block"
+      operator: "equals"
+      value: true
+
+rds:
+  encryption_enabled:
+    description: "RDS instances must be encrypted"
+    severity: high
+    condition:
+      field: "storage.encrypted"
+      operator: "equals"
+      value: true
+  
+  multi_az_enabled:
+    description: "Production databases should be Multi-AZ"
+    severity: medium
+    condition:
+      field: "multi_az"
+      operator: "equals"
+      value: true
+
+lambda:
+  runtime_supported:
+    description: "Only supported runtimes allowed"
+    severity: medium
+    condition:
+      field: "runtime"
+      operator: "contains"
+      value: ["python3", "nodejs14", "nodejs16"]
+  
+  vpc_configured:
+    description: "Lambda functions should run in VPC"
+    severity: low
+    condition:
+      field: "vpc_config"
+      operator: "exists"

@@ -1,0 +1,54 @@
+# AWS Infrastructure Documentation
+
+Generated: {{ generation_time }}
+
+## Overview
+
+{% for resource_type, count in resource_counts.items() %}
+- {{ resource_type }}: {{ count }} resources
+{% endfor %}
+
+## Resources
+
+{% for resource_type, resources in resources.items() %}
+### {{ resource_type | upper }}
+
+{% for resource in resources %}
+#### {{ resource.id if resource.id else resource.name if resource.name else resource.identifier }}
+
+{% if resource.tags %}
+**Tags:**
+{% for tag in resource.tags %}
+- {{ tag.Key }}: {{ tag.Value }}
+{% endfor %}
+{% endif %}
+
+**Configuration:**
+```json
+{{ resource | tojson(indent=2) }}
+```
+
+{% if resource.security_groups %}
+**Security Groups:**
+{% for sg in resource.security_groups %}
+- {{ sg.GroupId }}: {{ sg.GroupName }}
+{% endfor %}
+{% endif %}
+
+{% if resource_type == 'rds' %}
+**Connection Info:**
+- Endpoint: {{ resource.endpoint.Address }}:{{ resource.endpoint.Port }}
+- Engine: {{ resource.engine }} {{ resource.engine_version }}
+{% endif %}
+
+{% if resource_type == 'lambda' %}
+**Runtime Info:**
+- Runtime: {{ resource.runtime }}
+- Handler: {{ resource.handler }}
+- Memory: {{ resource.memory }}MB
+- Timeout: {{ resource.timeout }}s
+{% endif %}
+
+---
+{% endfor %}
+{% endfor %}

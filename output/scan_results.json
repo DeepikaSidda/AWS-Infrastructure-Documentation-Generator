@@ -1,0 +1,318 @@
+{
+    "ec2": [
+      {
+        "id": "i-0c15ccc48053c63d9",
+        "tags": [
+          {
+            "Key": "Name",
+            "Value": "target_machine"
+          }
+        ],
+        "configuration": {
+          "launch_time": "2025-02-05T09:13:20+00:00",
+          "security_groups": [
+            {
+              "GroupId": "sg-003b6a7641a93cfdb",
+              "GroupName": "launch-wizard-6"
+            }
+          ],
+          "state": "stopped",
+          "subnet_id": "subnet-0ebdea56a36355102",
+          "type": "t2.micro",
+          "vpc_id": "vpc-081134d54dec74aa3"
+        },
+        "security_groups": [
+          {
+            "GroupId": "sg-003b6a7641a93cfdb",
+            "GroupName": "launch-wizard-6"
+          }
+        ]
+      },
+      {
+        "id": "i-0e5fac8adcc567f98",
+        "tags": [
+          {
+            "Key": "Name",
+            "Value": "mylinuxvm"
+          }
+        ],
+        "configuration": {
+          "launch_time": "2025-02-25T01:03:09+00:00",
+          "security_groups": [
+            {
+              "GroupId": "sg-0a781c6b5fe9b6dff",
+              "GroupName": "launch-wizard-3"
+            }
+          ],
+          "state": "stopped",
+          "subnet_id": "subnet-0ebdea56a36355102",
+          "type": "t2.micro",
+          "vpc_id": "vpc-081134d54dec74aa3"
+        },
+        "security_groups": [
+          {
+            "GroupId": "sg-0a781c6b5fe9b6dff",
+            "GroupName": "launch-wizard-3"
+          }
+        ]
+      }
+    ],
+    "s3": [
+      {
+        "name": "blpgathon",
+        "configuration": {
+          "creation_date": "2025-04-14T16:41:25+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": true
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "cdk-hnb659fds-assets-381492198534-us-east-1",
+        "configuration": {
+          "creation_date": "2025-03-15T09:25:32+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "aws:kms"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "cf-templates-1bg1nmsv04efv-us-east-1",
+        "configuration": {
+          "creation_date": "2025-03-14T09:42:20+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "codepipeline-us-east-1-5c9d6940c007-4983-a615-45268572582c",
+        "configuration": {
+          "creation_date": "2025-04-14T06:13:57+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "deepusid",
+        "configuration": {
+          "creation_date": "2024-07-05T09:09:31+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": true
+              }
+            ]
+          },
+          "location": "us-east-2"
+        }
+      },
+      {
+        "name": "elasticbeanstalk-us-east-1-381492198534",
+        "configuration": {
+          "creation_date": "2025-02-10T01:23:47+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "email-recipient-data",
+        "configuration": {
+          "creation_date": "2025-01-11T01:28:44+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": true
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "my-deepika-unique-bucket-name",
+        "configuration": {
+          "creation_date": "2025-02-06T11:09:54+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": "us-west-2"
+        }
+      },
+      {
+        "name": "my-mail-storage",
+        "configuration": {
+          "creation_date": "2025-01-11T05:37:19+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": true
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "ownwebsite",
+        "configuration": {
+          "creation_date": "2024-07-05T08:44:13+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": true
+              }
+            ]
+          },
+          "location": "us-east-2"
+        }
+      },
+      {
+        "name": "serverless-chat-dev-serverlessdeploymentbucket-w2v2yvrkstkg",
+        "configuration": {
+          "creation_date": "2024-12-02T09:55:40+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      },
+      {
+        "name": "serverless-framework-deployments-us-east-1-9c0c8fd0-151d",
+        "configuration": {
+          "creation_date": "2025-03-14T16:02:48+00:00",
+          "encryption": {
+            "Rules": [
+              {
+                "ApplyServerSideEncryptionByDefault": {
+                  "SSEAlgorithm": "AES256"
+                },
+                "BucketKeyEnabled": false
+              }
+            ]
+          },
+          "location": null
+        }
+      }
+    ],
+    "rds": [],
+    "lambda": [
+      {
+        "name": "serverless-chat-dev-custom-resource-apigw-cw-role",
+        "configuration": {
+          "handler": "api-gateway-cloud-watch-role/handler.handler",
+          "last_modified": "2025-03-14T14:28:57.000+0000",
+          "memory": 1024,
+          "role": "arn:aws:iam::381492198534:role/serverless-chat-dev-IamRoleCustomResourcesLambdaExe-kCHBU8MBRVhg",
+          "runtime": "nodejs20.x",
+          "timeout": 180,
+          "vpc_config": null
+        }
+      },
+      {
+        "name": "websocket-api-chat-app-tu-SendMessageHandlerDCEABF-EQ3PpM4JehQb",
+        "configuration": {
+          "handler": "index.handler",
+          "last_modified": "2025-03-14T09:44:12.417+0000",
+          "memory": 128,
+          "role": "arn:aws:iam::381492198534:role/websocket-api-chat-app-tu-SendMessageHandlerService-M8g8FrjsWmUZ",
+          "runtime": "nodejs20.x",
+          "timeout": 3,
+          "vpc_config": null
+        }
+      },
+      {
+        "name": "SwasthyasheStack-SubscriptionLambdaFunctionRole",
+        "configuration": {
+          "handler": "index.handler",
+          "last_modified": "2025-03-06T14:14:31.000+0000",
+          "memory": 128,
+          "role": "arn:aws:iam::381492198534:role/SwasthyasheStack-SubscriptionLambdaExecutionRole",
+          "runtime": "nodejs14.x",
+          "timeout": 300,
+          "vpc_config": null
+        }
+      },
+      {
+        "name": "lambda-prod-email-handler",
+        "configuration": {
+          "handler": "index.lambda_handler",
+          "last_modified": "2025-04-15T07:33:18.000+0000",
+          "memory": 128,
+          "role": "arn:aws:iam::381492198534:role/lambda-prod-email-handler-role",
+          "runtime": "python3.9",
+          "timeout": 60,
+          "vpc_config": null
+        }
+      }
+    ]
+  }
+  

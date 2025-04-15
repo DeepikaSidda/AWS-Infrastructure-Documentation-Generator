@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS Infrastructure Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            color: #232f3e;
+        }
+        
+        .resource {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        
+        .resource-header {
+            background: #f8f8f8;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .metadata {
+            font-family: monospace;
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="aws-infrastructure-documentation">AWS Infrastructure Documentation</h1>
+<p>Generated: 2025-04-15T07:11:46.972041</p>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>ec2: 2 resources</li>
+<li>s3: 12 resources</li>
+<li>rds: 0 resources</li>
+<li>lambda: 11 resources</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<h3 id="ec2">EC2</h3>
+<h4 id="i-0c15ccc48053c63d9">i-0c15ccc48053c63d9</h4>
+<p><strong>Tags:</strong>
+- Name: target_machine</p>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;i-0c15ccc48053c63d9&quot;,
+  &quot;launch_time&quot;: &quot;2025-02-05T09:13:20+00:00&quot;,
+  &quot;security_groups&quot;: [
+    {
+      &quot;GroupId&quot;: &quot;sg-003b6a7641a93cfdb&quot;,
+      &quot;GroupName&quot;: &quot;launch-wizard-6&quot;
+    }
+  ],
+  &quot;state&quot;: &quot;stopped&quot;,
+  &quot;subnet_id&quot;: &quot;subnet-0ebdea56a36355102&quot;,
+  &quot;tags&quot;: [
+    {
+      &quot;Key&quot;: &quot;Name&quot;,
+      &quot;Value&quot;: &quot;target_machine&quot;
+    }
+  ],
+  &quot;type&quot;: &quot;t2.micro&quot;,
+  &quot;vpc_id&quot;: &quot;vpc-081134d54dec74aa3&quot;
+}
+</code></pre>
+<p><strong>Security Groups:</strong>
+- sg-003b6a7641a93cfdb: launch-wizard-6</p>
+<hr />
+<h4 id="i-0e5fac8adcc567f98">i-0e5fac8adcc567f98</h4>
+<p><strong>Tags:</strong>
+- Name: mylinuxvm</p>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;i-0e5fac8adcc567f98&quot;,
+  &quot;launch_time&quot;: &quot;2025-02-25T01:03:09+00:00&quot;,
+  &quot;security_groups&quot;: [
+    {
+      &quot;GroupId&quot;: &quot;sg-0a781c6b5fe9b6dff&quot;,
+      &quot;GroupName&quot;: &quot;launch-wizard-3&quot;
+    }
+  ],
+  &quot;state&quot;: &quot;stopped&quot;,
+  &quot;subnet_id&quot;: &quot;subnet-0ebdea56a36355102&quot;,
+  &quot;tags&quot;: [
+    {
+      &quot;Key&quot;: &quot;Name&quot;,
+      &quot;Value&quot;: &quot;mylinuxvm&quot;
+    }
+  ],
+  &quot;type&quot;: &quot;t2.micro&quot;,
+  &quot;vpc_id&quot;: &quot;vpc-081134d54dec74aa3&quot;
+}
+</code></pre>
+<p><strong>Security Groups:</strong>
+- sg-0a781c6b5fe9b6dff: launch-wizard-3</p>
+<hr />
+<h3 id="s3">S3</h3>
+<h4 id="blpgathon">blpgathon</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-04-14T16:41:25+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: true
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;blpgathon&quot;
+}
+</code></pre>
+<hr />
+<h4 id="cdk-hnb659fds-assets-381492198534-us-east-1">cdk-hnb659fds-assets-381492198534-us-east-1</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-03-15T09:25:32+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;aws:kms&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;cdk-hnb659fds-assets-381492198534-us-east-1&quot;
+}
+</code></pre>
+<hr />
+<h4 id="cf-templates-1bg1nmsv04efv-us-east-1">cf-templates-1bg1nmsv04efv-us-east-1</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-03-14T09:42:20+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;cf-templates-1bg1nmsv04efv-us-east-1&quot;
+}
+</code></pre>
+<hr />
+<h4 id="codepipeline-us-east-1-5c9d6940c007-4983-a615-45268572582c">codepipeline-us-east-1-5c9d6940c007-4983-a615-45268572582c</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-04-14T06:13:57+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;codepipeline-us-east-1-5c9d6940c007-4983-a615-45268572582c&quot;
+}
+</code></pre>
+<hr />
+<h4 id="deepusid">deepusid</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2024-07-05T09:09:31+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: true
+      }
+    ]
+  },
+  &quot;location&quot;: &quot;us-east-2&quot;,
+  &quot;name&quot;: &quot;deepusid&quot;
+}
+</code></pre>
+<hr />
+<h4 id="elasticbeanstalk-us-east-1-381492198534">elasticbeanstalk-us-east-1-381492198534</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-02-10T01:23:47+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;elasticbeanstalk-us-east-1-381492198534&quot;
+}
+</code></pre>
+<hr />
+<h4 id="email-recipient-data">email-recipient-data</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-01-11T01:28:44+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: true
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;email-recipient-data&quot;
+}
+</code></pre>
+<hr />
+<h4 id="my-deepika-unique-bucket-name">my-deepika-unique-bucket-name</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-02-06T11:09:54+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: &quot;us-west-2&quot;,
+  &quot;name&quot;: &quot;my-deepika-unique-bucket-name&quot;
+}
+</code></pre>
+<hr />
+<h4 id="my-mail-storage">my-mail-storage</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-01-11T05:37:19+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: true
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;my-mail-storage&quot;
+}
+</code></pre>
+<hr />
+<h4 id="ownwebsite">ownwebsite</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2024-07-05T08:44:13+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: true
+      }
+    ]
+  },
+  &quot;location&quot;: &quot;us-east-2&quot;,
+  &quot;name&quot;: &quot;ownwebsite&quot;
+}
+</code></pre>
+<hr />
+<h4 id="serverless-chat-dev-serverlessdeploymentbucket-w2v2yvrkstkg">serverless-chat-dev-serverlessdeploymentbucket-w2v2yvrkstkg</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2024-12-02T09:55:40+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;serverless-chat-dev-serverlessdeploymentbucket-w2v2yvrkstkg&quot;
+}
+</code></pre>
+<hr />
+<h4 id="serverless-framework-deployments-us-east-1-9c0c8fd0-151d">serverless-framework-deployments-us-east-1-9c0c8fd0-151d</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;creation_date&quot;: &quot;2025-03-14T16:02:48+00:00&quot;,
+  &quot;encryption&quot;: {
+    &quot;Rules&quot;: [
+      {
+        &quot;ApplyServerSideEncryptionByDefault&quot;: {
+          &quot;SSEAlgorithm&quot;: &quot;AES256&quot;
+        },
+        &quot;BucketKeyEnabled&quot;: false
+      }
+    ]
+  },
+  &quot;location&quot;: null,
+  &quot;name&quot;: &quot;serverless-framework-deployments-us-east-1-9c0c8fd0-151d&quot;
+}
+</code></pre>
+<hr />
+<h3 id="rds">RDS</h3>
+<h3 id="lambda">LAMBDA</h3>
+<h4 id="serverless-chat-dev-custom-resource-apigw-cw-role">serverless-chat-dev-custom-resource-apigw-cw-role</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;api-gateway-cloud-watch-role/handler.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T14:28:57.000+0000&quot;,
+  &quot;memory&quot;: 1024,
+  &quot;name&quot;: &quot;serverless-chat-dev-custom-resource-apigw-cw-role&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/serverless-chat-dev-IamRoleCustomResourcesLambdaExe-kCHBU8MBRVhg&quot;,
+  &quot;runtime&quot;: &quot;nodejs20.x&quot;,
+  &quot;timeout&quot;: 180,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs20.x
+- Handler: api-gateway-cloud-watch-role/handler.handler
+- Memory: 1024MB
+- Timeout: 180s</p>
+<hr />
+<h4 id="websocket-api-chat-app-tu-sendmessagehandlerdceabf-eq3ppm4jehqb">websocket-api-chat-app-tu-SendMessageHandlerDCEABF-EQ3PpM4JehQb</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;index.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T09:44:12.417+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;websocket-api-chat-app-tu-SendMessageHandlerDCEABF-EQ3PpM4JehQb&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/websocket-api-chat-app-tu-SendMessageHandlerService-M8g8FrjsWmUZ&quot;,
+  &quot;runtime&quot;: &quot;nodejs20.x&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs20.x
+- Handler: index.handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="swasthyashestack-subscriptionhandlerad1b68b4-4enq1by6wtoy">SwasthyasheStack-SubscriptionHandlerAD1B68B4-4eNQ1By6WToY</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;subscription.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-28T10:38:57.000+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;SwasthyasheStack-SubscriptionHandlerAD1B68B4-4eNQ1By6WToY&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/SwasthyasheStack-SubscriptionHandlerServiceRoleEB93-NpsHDY1GY7K4&quot;,
+  &quot;runtime&quot;: &quot;nodejs18.x&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: {
+    &quot;Ipv6AllowedForDualStack&quot;: false,
+    &quot;SecurityGroupIds&quot;: [],
+    &quot;SubnetIds&quot;: [],
+    &quot;VpcId&quot;: &quot;&quot;
+  }
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs18.x
+- Handler: subscription.handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="websocket-api-chat-app-tu-disconnecthandlercb7ed6f-yxy9newimkng">websocket-api-chat-app-tu-DisconnectHandlerCB7ED6F-YXy9NEWIMknG</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;index.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T09:44:12.318+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;websocket-api-chat-app-tu-DisconnectHandlerCB7ED6F-YXy9NEWIMknG&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/websocket-api-chat-app-tu-DisconnectHandlerServiceR-5tnZUKAKVExj&quot;,
+  &quot;runtime&quot;: &quot;nodejs20.x&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs20.x
+- Handler: index.handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="serverless-chat-dev-websockethandler">serverless-chat-dev-websocketHandler</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;src/handler.handle&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T14:28:57.000+0000&quot;,
+  &quot;memory&quot;: 1024,
+  &quot;name&quot;: &quot;serverless-chat-dev-websocketHandler&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/serverless-chat-dev-us-east-1-lambdaRole&quot;,
+  &quot;runtime&quot;: &quot;nodejs18.x&quot;,
+  &quot;timeout&quot;: 6,
+  &quot;vpc_config&quot;: {
+    &quot;Ipv6AllowedForDualStack&quot;: false,
+    &quot;SecurityGroupIds&quot;: [],
+    &quot;SubnetIds&quot;: [],
+    &quot;VpcId&quot;: &quot;&quot;
+  }
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs18.x
+- Handler: src/handler.handle
+- Memory: 1024MB
+- Timeout: 6s</p>
+<hr />
+<h4 id="my_mail_function">my_mail_function</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;lambda_function.lambda_handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-01-11T06:00:45.000+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;my_mail_function&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/My_mail&quot;,
+  &quot;runtime&quot;: &quot;python3.9&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: python3.9
+- Handler: lambda_function.lambda_handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="deepuwebsocketsend">deepuwebsocketsend</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;lambda_function.lambda_handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-10T06:29:46.000+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;deepuwebsocketsend&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/service-role/deepuwebsocketsend-role-pkdipd6b&quot;,
+  &quot;runtime&quot;: &quot;python3.9&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: python3.9
+- Handler: lambda_function.lambda_handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="deepusocketdelete">deepusocketdelete</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;lambda_function.lambda_handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-10T06:26:37.000+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;deepusocketdelete&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/service-role/deepusocketdelete-role-0m9gwvz8&quot;,
+  &quot;runtime&quot;: &quot;python3.9&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: python3.9
+- Handler: lambda_function.lambda_handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="websocket-api-chat-app-tuto-connecthandler2ffd52d8-b8igloknqicf">websocket-api-chat-app-tuto-ConnectHandler2FFD52D8-B8iGLokNQIcF</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;index.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T09:44:12.556+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;websocket-api-chat-app-tuto-ConnectHandler2FFD52D8-B8iGLokNQIcF&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/websocket-api-chat-app-tu-ConnectHandlerServiceRole-FtL2q5f5IvSm&quot;,
+  &quot;runtime&quot;: &quot;nodejs20.x&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs20.x
+- Handler: index.handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="send-bulk-email">send-bulk-email</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;lambda_function.lambda_handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-01-11T02:13:22.000+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;send-bulk-email&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/mass_mailing&quot;,
+  &quot;runtime&quot;: &quot;python3.9&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: python3.9
+- Handler: lambda_function.lambda_handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+<h4 id="websocket-api-chat-app-tuto-defaulthandler604df7ac-de3y3udo0bkx">websocket-api-chat-app-tuto-DefaultHandler604DF7AC-de3Y3udO0bKx</h4>
+<p><strong>Configuration:</strong></p>
+<pre><code class="language-json">{
+  &quot;handler&quot;: &quot;index.handler&quot;,
+  &quot;last_modified&quot;: &quot;2025-03-14T09:44:12.457+0000&quot;,
+  &quot;memory&quot;: 128,
+  &quot;name&quot;: &quot;websocket-api-chat-app-tuto-DefaultHandler604DF7AC-de3Y3udO0bKx&quot;,
+  &quot;role&quot;: &quot;arn:aws:iam::381492198534:role/websocket-api-chat-app-tu-DefaultHandlerServiceRole-fgiNsLoUbSIB&quot;,
+  &quot;runtime&quot;: &quot;nodejs20.x&quot;,
+  &quot;timeout&quot;: 3,
+  &quot;vpc_config&quot;: null
+}
+</code></pre>
+<p><strong>Runtime Info:</strong>
+- Runtime: nodejs20.x
+- Handler: index.handler
+- Memory: 128MB
+- Timeout: 3s</p>
+<hr />
+    </div>
+</body>
+</html>
