@@ -50,8 +50,7 @@ Managing AWS infrastructure manually can be overwhelming, especially when scalab
 <table align="center">
   <tr>
     <td align="center">
-      <img src="aws_infrastructure_documentation_tool_architecture.png
-" alt="Lambda Function" width="250"><br>
+      <img src="aws_infrastructure_documentation_tool_architecture.png" alt="Lambda Function" width="250"><br>
       <b>AWS Infrastructure Documentation Generator</b>
     </td>
     </tr>
@@ -78,11 +77,11 @@ It fetches metadata including:
   <tr>
     <td align="center">
       <img src="images/buckets.png" alt="Lambda Function" width="250"><br>
-      <b>Some of s3 buckets listed in my account</b>
+      <b>Some s3 buckets listed in my account</b>
     </td>
     <td align="center">
       <img src="images/ec2.png" alt="Another Image" width="250"><br>
-      <b>Some of EC2 instances listed in my accout</b>
+      <b>Some EC2 instances listed in my accout</b>
     </td>
   </tr>
 </table>
@@ -137,7 +136,14 @@ Supports change detection and auditing via snapshots:
 - Maintains changelogs for rollback and compliance
 - (Optional) Alerting on unauthorized changes
 
-
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/busket.png" alt="Lambda Function" width="250"><br>
+      <b>AWS Infrastructure Documentation Generator</b>
+    </td>
+    </tr>
+</table>
 
 
 
