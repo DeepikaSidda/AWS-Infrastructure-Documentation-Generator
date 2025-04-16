@@ -47,6 +47,15 @@ Managing AWS infrastructure manually can be overwhelming, especially when scalab
 
 ## 🧠 System Design — AWS InfraDoc Generator
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="aws_infrastructure_documentation_tool_architecture.png
+" alt="Lambda Function" width="250"><br>
+      <b>AWS Infrastructure Documentation Generator</b>
+    </td>
+    </tr>
+</table>
 ### 1️⃣ Scanning AWS Infrastructure in Real Time
 
 The tool leverages AWS SDKs like **Boto3** or the **AWS CLI** to connect to your AWS account and automatically discover resources such as:
@@ -68,12 +77,12 @@ It fetches metadata including:
 <table align="center">
   <tr>
     <td align="center">
-      <img src="swastyashe_architecture.png" alt="Lambda Function" width="250"><br>
-      <b>Swasthyashe Web App</b>
+      <img src="images/buckets.png" alt="Lambda Function" width="250"><br>
+      <b>Some of s3 buckets listed in my account</b>
     </td>
     <td align="center">
-      <img src="serverless_registration_form_architecture.png" alt="Another Image" width="250"><br>
-      <b>Serverless Registration Web App</b>
+      <img src="images/ec2.png" alt="Another Image" width="250"><br>
+      <b>Some of EC2 instances listed in my accout</b>
     </td>
   </tr>
 </table>
