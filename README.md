@@ -44,8 +44,8 @@ Managing AWS infrastructure manually can be overwhelming, especially when scalab
 - 🧹 **Auto Cleanup:** Helps identify orphaned or zombie resources  
 - 💵 **Track Cost-related Changes:** Correlates infra changes to cost spikes  
 - ✅ **Enforce Cost-Saving Rules:** S3 lifecycle, encryption policies, etc.
-
-## 🧠 System Design — AWS InfraDoc Generator
+---
+### 🧠 System Design — AWS InfraDoc Generator
 
 <table align="center">
   <tr>
@@ -139,7 +139,7 @@ Supports change detection and auditing via snapshots:
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/busket.png" alt="Lambda Function" width="250"><br>
+      <img src="images/bucket.png" alt="Lambda Function" width="250"><br>
       <b>AWS Infrastructure Documentation Generator</b>
     </td>
     </tr>
@@ -160,13 +160,14 @@ Checks for:
 - Approved instance types or regions
 
 📄 Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
-
+<br></br>
+---
 ## 📝 Blog  
 Check out the detailed blog post on Medium:  
 👉 [Automate Your Cloud Clarity: AWS Infrastructure Documentation Generator](https://medium.com/@siddadeepika/automate-your-cloud-clarity-aws-infrastructure-documentation-generator-e057c196c410)
 
 
-
+--
 ## ✅ Getting Started: Prerequisites
 
 Make sure you have:
@@ -182,8 +183,6 @@ Make sure you have:
 git clone https://github.com/DeepikaSidda/AWS-Infrastructure-Documentation-Generator.git
 cd AWS-Infrastructure-Documentation-Generator
 pip install -r requirements.txt
-
-
 
 
 
