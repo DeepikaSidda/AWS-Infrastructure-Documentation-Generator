@@ -143,22 +143,22 @@ git clone https://github.com/DeepikaSidda/AWS-Infrastructure-Documentation-Gener
 cd AWS-Infrastructure-Documentation-Generator
 pip install -r requirements.txt
 
-## 📝 Blog
 
+## 📝 Blog  
 Check out the detailed blog post on Medium:  
 👉 [Automate Your Cloud Clarity: AWS Infrastructure Documentation Generator](https://medium.com/@siddadeepika/automate-your-cloud-clarity-aws-infrastructure-documentation-generator-e057c196c410)
 
+---
 
-## 📃 License
-
+## 📃 License  
 MIT License © 2025 [Deepika Sidda](https://github.com/DeepikaSidda)
 
 ---
 
-## 🙌 Contribute
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+## 🙌 Contribute  
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.  
 
 Feel free to fork the repo, submit issues, and suggest new features or improvements 🚀
+
 
 
