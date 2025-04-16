@@ -55,6 +55,8 @@ Managing AWS infrastructure manually can be overwhelming, especially when scalab
     </td>
     </tr>
 </table>
+
+
 ### 1️⃣ Scanning AWS Infrastructure in Real Time
 
 The tool leverages AWS SDKs like **Boto3** or the **AWS CLI** to connect to your AWS account and automatically discover resources such as:
