@@ -65,6 +65,19 @@ It fetches metadata including:
 
 ✅ This enables teams to maintain complete visibility of their AWS environment — no more manual mapping or outdated Excel sheets!
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="swastyashe_architecture.png" alt="Lambda Function" width="250"><br>
+      <b>Swasthyashe Web App</b>
+    </td>
+    <td align="center">
+      <img src="serverless_registration_form_architecture.png" alt="Another Image" width="250"><br>
+      <b>Serverless Registration Web App</b>
+    </td>
+  </tr>
+</table>
+
 
 ### 2️⃣ Generating Dynamic Architecture Diagrams
 
@@ -98,6 +111,12 @@ Transforms AWS resource metadata into structured docs:
 - Output in **HTML**, **Markdown**, or **PDF**
 - Easy to integrate with **Notion**, **Confluence**, or GitHub Wiki
 
+## 📄 Sample Documentation
+
+A sample PDF version of the generated documentation is available for reference:  
+👉 [View Sample Documentation](https://drive.google.com/file/d/1agkY-mAMvi30qpUjcuElTp-KyJZ5FNsC/view?usp=sharing)
+
+
 
 
 ### 4️⃣ Tracking Infrastructure Changes
@@ -127,6 +146,12 @@ Checks for:
 
 📄 Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
 
+## 📝 Blog  
+Check out the detailed blog post on Medium:  
+👉 [Automate Your Cloud Clarity: AWS Infrastructure Documentation Generator](https://medium.com/@siddadeepika/automate-your-cloud-clarity-aws-infrastructure-documentation-generator-e057c196c410)
+
+
+
 ## ✅ Getting Started: Prerequisites
 
 Make sure you have:
@@ -144,21 +169,10 @@ cd AWS-Infrastructure-Documentation-Generator
 pip install -r requirements.txt
 
 
-## 📝 Blog  
-Check out the detailed blog post on Medium:  
-👉 [Automate Your Cloud Clarity: AWS Infrastructure Documentation Generator](https://medium.com/@siddadeepika/automate-your-cloud-clarity-aws-infrastructure-documentation-generator-e057c196c410)
 
----
 
-## 📃 License  
-MIT License © 2025 [Deepika Sidda](https://github.com/DeepikaSidda)
 
----
 
-## 🙌 Contribute  
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.  
-
-Feel free to fork the repo, submit issues, and suggest new features or improvements 🚀
 
 
 
