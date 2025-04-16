@@ -158,8 +158,7 @@ Checks for:
 - Public access blocking (S3, EC2)
 - IAM over-permissiveness
 - Approved instance types or regions
-
-📄 Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
+- Compliance reports available in **PDF**, **JSON**, and **HTML** formats for easy auditing.
 <br></br>
 ---
 ## 📝 Blog  
@@ -167,7 +166,7 @@ Check out the detailed blog post on Medium:
 👉 [Automate Your Cloud Clarity: AWS Infrastructure Documentation Generator](https://medium.com/@siddadeepika/automate-your-cloud-clarity-aws-infrastructure-documentation-generator-e057c196c410)
 
 
---
+---
 ## ✅ Getting Started: Prerequisites
 
 Make sure you have:
@@ -183,10 +182,3 @@ Make sure you have:
 git clone https://github.com/DeepikaSidda/AWS-Infrastructure-Documentation-Generator.git
 cd AWS-Infrastructure-Documentation-Generator
 pip install -r requirements.txt
-
-
-
-
-
-
-
